@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
-  type: NodePort # Default is "ClusterIP"
+  type: NodePort # Default is "ClusterIP" for internal services
   selector:
     app.kubernetes.io/name: nginx
   ports:

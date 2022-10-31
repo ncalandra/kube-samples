@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: nginx  # Name of the deployment
   labels:
     app.kubernetes.io/name: nginx
 spec:
@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
